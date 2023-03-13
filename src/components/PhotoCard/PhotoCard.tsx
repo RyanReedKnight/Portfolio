@@ -1,9 +1,14 @@
 import React, { FC } from 'react';
 import styles from './PhotoCard.module.css';
 
-interface PhotoCardProps {}
+// Models
+import Photo from '../../models/Photo';
 
-const PhotoCard: FC<PhotoCardProps> = () => (
+interface PhotoCardProps {
+  photoModel:Photo
+}
+
+const PhotoCard: FC<PhotoCardProps> = ({photoModel}) => (
   <div className={styles.PhotoCard} data-testid="PhotoCard">
     PhotoCard Component
   </div>
