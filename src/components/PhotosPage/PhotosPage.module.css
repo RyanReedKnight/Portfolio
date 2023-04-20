@@ -1,7 +1,11 @@
 .PhotosPage {
     display: flex;
     flex-direction:row;
+    flex-wrap: wrap;
     background: url("./assets/MountOlympusGlacier.jpg") no-repeat center center fixed;
     background-size:cover;
     gap: 4vw;
+    margin-top: 5vh;
+    z-index: 3;
+    
 }
