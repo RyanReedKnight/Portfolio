@@ -1,5 +1,5 @@
 export default interface Photo {
-    pathToPhoto:string;
+    title:string;
     location:string;
     description:string;
 }
