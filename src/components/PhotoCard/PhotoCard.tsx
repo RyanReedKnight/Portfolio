@@ -22,9 +22,9 @@ const PhotoCard: FC<PhotoCardProps> = ({photoModel}) => {
 
   return (<>
   <div className={styles.PhotoCard} data-testid="PhotoCard">
-    {photoBytes && <img src={URL.createObjectURL(new Blob([photoBytes], { type: 'image/jpeg' }))}/>}
-    <h2>Description: {photoModel.description}</h2>
-    <h2>Location: {photoModel.location}</h2>
+    {photoBytes && <img id="card-img" src={URL.createObjectURL(new Blob([photoBytes], { type: 'image/jpeg' }))}/>}
+    <p>Description: {photoModel.description}<br/>
+       Location: {photoModel.location}</p>
   </div>
   </>)
 };

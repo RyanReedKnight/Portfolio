@@ -1,7 +1,8 @@
 
 
 .App {
-  background-image: url("./assets/MountOlympusGlacier.jpg");
+  background-image: inherit;
+  
 }
 
 #root {
@@ -9,6 +10,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+ 
 }
 
 .logo {

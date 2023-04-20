@@ -1,1 +1,7 @@
-.PhotosPage {}
+.PhotosPage {
+    display: flex;
+    flex-direction:row;
+    background: url("./assets/MountOlympusGlacier.jpg") no-repeat center center fixed;
+    background-size:cover;
+    gap: 4vw;
+}

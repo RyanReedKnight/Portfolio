@@ -1,1 +1,20 @@
-.PhotoCard {}
+.PhotoCard {
+    width: 20vw;
+    
+    background: rgba(43, 39, 39, 0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+.PhotoCard img {
+    width:85%;
+    max-height: 40%;
+    object-fit: contain;
+    margin-top:15%;
+}
+
+.PhotoCard p {
+    font-size: small;
+    text-align: start;
+    margin:15%;
+}
