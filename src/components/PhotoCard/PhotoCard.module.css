@@ -6,6 +6,7 @@
     overflow: hidden;
     min-width: 200px;
     max-width: 350px;
+    border-radius: 1rem;
 }
 
 .PhotoCard img {
@@ -13,6 +14,8 @@
     max-height: 40%;
     object-fit: contain;
     margin-top:15%;
+    border-radius: 0.5rem;
+
 }
 
 .PhotoCard p {
