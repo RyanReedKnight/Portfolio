@@ -5,4 +5,4 @@ hosted on an AWS S3 bucket, which can be viewed <a href="http://photos-and-such.
 I have succesfully served the page via Nginx but had issues conecting making requests to the backend.
 
 # Links
-  * <a href="https://github.com/RyanReedKnight/PortfolioBackend" target="_blank>Backend repository</a>
+  * <a href="https://github.com/RyanReedKnight/PortfolioBackend" target="_blank">Backend repository</a>
