@@ -1,1 +1,11 @@
-.AboutPage {}
+.AboutPage {
+    background: rgba(43, 39, 39, 0.9);
+    text-align:left;
+    padding: 5rem;
+    border-radius: 2rem;
+    color: antiquewhite;
+}
+
+.AboutPage > a {
+    color: antiquewhite;
+}
