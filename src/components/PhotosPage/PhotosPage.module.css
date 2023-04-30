@@ -2,10 +2,20 @@
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    background: url("./assets/MountOlympusGlacier.jpg") no-repeat center center fixed;
+	justify-content:center;	
     background-size:cover;
     gap: 4vw;
     margin-top: 15vh;
     z-index: 3;
-    
+	margin-left:6vw;
+	margin-right:6vw;
 }
+
+@media (max-width:600px) {
+	.PhotosPage {
+		flex-direction:column;
+		margin-left:1vw;
+		margin-right:1vw;
+	}
+}
+

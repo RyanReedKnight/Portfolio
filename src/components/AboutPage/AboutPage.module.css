@@ -4,8 +4,21 @@
     padding: 5rem;
     border-radius: 2rem;
     color: antiquewhite;
+	margin-top: 19vh;
+	z-index: 3;
+	justify-content:center;
 }
 
-.AboutPage > a {
-    color: antiquewhite;
+.linkStyle {
+	color: antiquewhite;
+}
+.linkStyle:hover {
+	color: #89CFF0;
+}
+
+@media (max-width:600px) {
+	.AboutPage {
+		margin-left: 1vw;
+		margin-right: 1vw;
+	}
 }

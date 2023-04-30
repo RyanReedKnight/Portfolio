@@ -18,9 +18,9 @@ const AboutPage: FC<AboutPageProps> = () => {
       </p>
       <p>Relevant links</p>
       <ul>
-        <li><a href="https://github.com/RyanReedKnight/PortfolioBackend" target="_blank">Repositiry for the backend of the application.</a></li>
-        <li><a href="https://github.com/RyanReedKnight/Portfolio" target="_blank">Repository for the front end of the application.</a></li>
-        <li><a href="https://github.com/RyanReedKnight/portfolio-admin" target="_blank">Repository for the admin portal</a></li>
+        <li><a className={styles.linkStyle} href="https://github.com/RyanReedKnight/PortfolioBackend" target="_blank">Repositiry for the backend of the application.</a></li>
+        <li><a className={styles.linkStyle} href="https://github.com/RyanReedKnight/Portfolio" target="_blank">Repository for the front end of the application.</a></li>
+        <li><a className={styles.linkStyle} href="https://github.com/RyanReedKnight/portfolio-admin" target="_blank">Repository for the admin portal</a></li>
       </ul>
     </div>
 )};
