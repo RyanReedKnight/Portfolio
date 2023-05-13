@@ -5,5 +5,5 @@ by Nginx on an EC2 instance. On this EC2 instance Nginx is configured to make re
 where the back-end is hosted.
 
 # Links
-  * <a href="http://ec2-35-89-191-219.us-west-2.compute.amazonaws.com/">The deployed website.</a>
+  * <a href="http://ryan-knights-photo-website.com">The deployed website.</a>
   * <a href="https://github.com/RyanReedKnight/PortfolioBackend" target="_blank">Backend repository</a>
