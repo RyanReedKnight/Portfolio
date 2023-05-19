@@ -19,11 +19,12 @@
 
 @media (max-width:600px) {
 	.AboutPage {
-		margin-left: 1vw;
-		margin-right: 1vw;
+		margin-left: 3vw;
+		margin-right: 3vw;
 		margin-top: 15vh;
-		padding-left: 5vw;
-		padding-right:5vw;
+		padding: 5vw;
+		border-radius: 1rem;
+		/*padding-right:5vw;*/
 	}
 
 }
