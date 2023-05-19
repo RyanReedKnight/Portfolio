@@ -1,5 +1,6 @@
 .AboutPage {
     background: rgba(43, 39, 39, 0.9);
+	max-width: 1280px;
     text-align:left;
     padding: 5rem;
     border-radius: 2rem;
