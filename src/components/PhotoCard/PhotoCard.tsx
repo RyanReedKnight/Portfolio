@@ -6,10 +6,11 @@ import Photo from '../../models/Photo';
 import ImageService from '../../services/ImageService';
 
 interface PhotoCardProps {
-  photoModel:Photo
+  photoModel:Photo,
+  setExpandedPhotoBytes:Function,
 }
 
-const PhotoCard: FC<PhotoCardProps> = ({photoModel}) => {
+const PhotoCard: FC<PhotoCardProps> = ({photoModel,setExpandedPhotoBytes}) => {
   const [photoBytes,setPhotoBytes] = React.useState<ArrayBuffer>();
   
   React.useEffect(() => {
@@ -20,12 +21,17 @@ const PhotoCard: FC<PhotoCardProps> = ({photoModel}) => {
     .catch(err => console.error(err))
   },[])
 
-  return (<>
-  <div className={styles.PhotoCard} data-testid="PhotoCard">
-    {photoBytes && <img id="card-img" src={URL.createObjectURL(new Blob([photoBytes], { type: 'image/jpeg' }))}/>}
-    <p>Description: {photoModel.description}<br/>
-       Location: {photoModel.location}</p>
-  </div>
+  // Handle component click, ultimatly should expend component.
+  const handleComponentClick = () => {
+    setExpandedPhotoBytes(()=>photoBytes);
+  }
+
+  return (<> 
+    <div className={styles.PhotoCard} data-testid="PhotoCard" onClick={handleComponentClick}>
+      {photoBytes && <img id="card-img" src={URL.createObjectURL(new Blob([photoBytes], { type: 'image/jpeg' }))}/>}
+      <p>Description: {photoModel.description}<br/>
+        Location: {photoModel.location}</p>
+    </div> 
   </>)
 };
 

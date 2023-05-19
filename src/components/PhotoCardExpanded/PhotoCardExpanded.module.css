@@ -1,0 +1,35 @@
+
+.PhotoCardExpanded {
+    position:relative;
+    display: inline;
+}
+
+.PhotoCardExpanded img {
+    max-width:85vw;
+    max-height: 95vh;
+    object-fit: contain;
+    margin-top:15%;
+    border-radius: 0.1rem;
+
+}
+
+.closeButton {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    transform: translate(50%, -50%);
+    background-color: transparent;
+    border: none;
+    color: bisque;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .PhotoCardExpanded {
+	    margin-left:4vw;
+	    margin-right:4vw;
+        width:92vw;
+    }
+}

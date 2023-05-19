@@ -31,5 +31,6 @@
 	    margin-left:4vw;
 	    margin-right:4vw;
         width:92vw;
+        pointer-events: none;
     }
 }
