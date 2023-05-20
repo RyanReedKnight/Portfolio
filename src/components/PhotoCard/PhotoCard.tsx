@@ -7,11 +7,12 @@ import ImageService from '../../services/ImageService';
 
 interface PhotoCardProps {
   photoModel:Photo,
+  photoBytes:ArrayBuffer,
   setExpandedPhotoBytes:Function,
 }
 
-const PhotoCard: FC<PhotoCardProps> = ({photoModel,setExpandedPhotoBytes}) => {
-  const [photoBytes,setPhotoBytes] = React.useState<ArrayBuffer>();
+const PhotoCard: FC<PhotoCardProps> = ({photoModel,photoBytes,setExpandedPhotoBytes}) => {
+  /*const [photoBytes,setPhotoBytes] = React.useState<ArrayBuffer>();
   
   React.useEffect(() => {
     (new ImageService).getPhotoBytes(photoModel.title)
@@ -19,7 +20,7 @@ const PhotoCard: FC<PhotoCardProps> = ({photoModel,setExpandedPhotoBytes}) => {
       setPhotoBytes(()=>res as ArrayBuffer)
     })
     .catch(err => console.error(err))
-  },[])
+  },[])*/
 
   // Handle component click, ultimatly should expend component.
   const handleComponentClick = () => {
